@@ -27,7 +27,7 @@ If you have not worked with this type of algorithm before, then it can be a litt
 
 In the example above, we want to calculate 6! so we call factorial(6).
 
-The function tries to evaluate. On line 2 since n = 6 and 6 > 1, we return n * factorial(5) on line 3. However, we do not return/exit the function at this point, because we still need to evaluate factorial(5).
+The function tries to evaluate. On line 2 since $ n = 6 and 6 > 1 $, we return $ 6 * factorial(5) $ on line 3. However, we do not return/exit the function at this point, because we still need to evaluate factorial(5).
 So the cycle repeats for n = 5, then n = 4 ... n = 2 and finally n = 1. 
 
 > return 6 * factorial(5)
