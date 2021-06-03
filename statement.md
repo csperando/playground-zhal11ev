@@ -35,11 +35,7 @@ So the cycle repeats for n = 5, then n = 4 ... n = 2 and finally n = 1.
 >>>> return 3 * factorial(2)
 >>>>> return 2 * factorial(1)
 >>>>>> return 1
->>>>> return 2 * 1
->>>> return 3 * 2 * 1
->>> return 4 * 3 * 2 * 1
->> return 5 * 4 * 3 * 2 * 1
-> return 6 * 5 * 4 * 3 * 2 * 1
+
 
 # Infinite Loops
 
