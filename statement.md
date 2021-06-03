@@ -2,13 +2,15 @@
 
 Recursion is the term used for algorithms that solve for a value in a sequence that depends on other values in the same sequence. 
 
-One of the most common tutorials for learning recursive algorithms is to calculate the factorial of some integer n, denoted n!
+One of the most common tutorials for learning recursive algorithms is to calculate the factorial of some integer n, denoted n! The formula can be expressed as follows:
 
-+ 5! = 5*4*3*2*1 = 120 \n
-+ 4! = 4*3*2*1   = 24 \n
-+ 3! = 3*2*1     = 6 \n
++ N! = N * (N-1) * (N-2) * ... * 2 * 1
 
-N! = N*(N-1)*(N-2)*...*2*1
+For example: 
++ 5! = 5 * 4 * 3 * 2 * 1 = 120 
++ 4! = 4 * 3 * 2 * 1 = 24 
++ 3! = 3 * 2 * 1 = 6 
+
 
 ```python runnable
 def factorial(n):
