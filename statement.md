@@ -25,8 +25,9 @@ print("6! =", factorial(6))
 
 If you have not worked with this type of algorithm before, then it can be a little counter-intuitive for most top-down programming mindsets. So lets break it down a little further.
 
-In the example above, we want to calculate 6! so we call factorial(6)
-Since n = 6 and 6 > 1, we return n * factorial(5) on line 3. However, we do not return/exit the function at this point, because we still need to evaluate factorial(5).
+In the example above, we want to calculate 6! so we call factorial(6).
+
+The function tries to evaluate. On line 2 since n = 6 and 6 > 1, we return n * factorial(5) on line 3. However, we do not return/exit the function at this point, because we still need to evaluate factorial(5).
 So the cycle repeats for n = 5, then n = 4 ... n = 2 and finally n = 1. 
 
 > return 6 * factorial(5)
