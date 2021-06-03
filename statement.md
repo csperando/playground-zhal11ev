@@ -29,7 +29,7 @@ print("6! =", factorial(6))
 In the above code, the function will call itself until the parameter n is less than or equal to one. Also, every time it is called recursively, the input parameter n is decremented by 1.
 This prevents the function from calling itself enlessly over and over again. For more complex examples, make sure the value you are interested in calculating is well-defined and will not lead to an infinite recursion depth.
 
-# Limit the Depth of your Calculations
+## Limit the Depth of your Calculations
 
 Depending on the problem you are trying to solve, it may be a good idea to limit the depth of your recursive function. For more advanced algorithms such as Monte Carlo Tree Search (MCTS) used in chess programs, it is unreasonable to try to calculate every possible move. However, if you only want to look 3 or so steps ahead then you need to keep track of the "depth" of your algorithm.
 
