@@ -37,6 +37,7 @@ So the cycle repeats for n = 5, then n = 4 ... n = 2 and finally n = 1.
 >>>>>> return 1
 
 At this point we have hit the maximum recursion depth of the algorithm. factorial(1) evaluates to 1 and factorial(2) returns 2 * 1. Then factorial(3) returns 3 * 2, factorial(4) returns 4 * 6, and on until our initial function call factorial(6) returns 720.
+The order of execution is extremely important when designing a recursion algorithm. Often times the value you are interested in finding is at the bottom depth of your function calls, with half of your calculations remaining. Just because something is returned from a function in a recursion algorithm does not mean you will see that result like you would in a more linear top-down program.
 
 # Infinite Loops
 
@@ -47,11 +48,11 @@ This prevents the function from calling itself endlessly over and over again. Fo
 
 Depending on the problem you are trying to solve, it may be a good idea to limit the depth of your recursive function. For more advanced algorithms such as Monte Carlo Tree Search (MCTS) used in chess programs, it is unreasonable to try to calculate every possible move. However, if you only want to look 3 or so steps ahead then you need to keep track of the "depth" of your algorithm.
 
-Below is a snippet of an almost identical factorial function to the one above. However, this one keeps track of how many times the factorial function has called itself. If it calls itself 4 times or more, then it will print an error message and return 0.
+Below is a snippet of an almost identical factorial function to the one above. However, this one keeps track of how many times the factorial function has called itself. If it calls itself 7 times or more, then it will print an error message and return 0.
 
 ```python runnable
 def factorial(n, depth):
-    if(depth < 4):
+    if(depth < 7):
         if(n > 1):
             return n*factorial(n-1, depth + 1)
         else:
@@ -62,6 +63,7 @@ def factorial(n, depth):
 
 
 print("6! =", factorial(6, 0))
+print("8! =", factorial(8, 0))
 ```
 
 
