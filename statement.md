@@ -27,7 +27,7 @@ print("6! =", factorial(6))
 # Infinite Loops
 
 In the above code, the function will call itself until the parameter n is less than or equal to one. Also, every time it is called recursively, the input parameter n is decremented by 1.
-This prevents the function from calling itself enlessly over and over again. For more complex examples, make sure the value you are interested in calculating is well-defined and will not lead to an infinite recursion depth.
+This prevents the function from calling itself endlessly over and over again. For more complex examples, make sure the value you are interested in calculating is well-defined and will not lead to an infinite recursion depth.
 
 ## Limit the Depth of your Calculations
 
@@ -51,4 +51,7 @@ print("6! =", factorial(6, 0))
 ```
 
 
-If you want a more complex example (external libraries, viewers...), use the [Advanced Python template](https://tech.io/select-repo/429)
+### Additional Resources
+
+[Recursion Wikipedia](https://en.wikipedia.org/wiki/Recursion_(computer_science))
+
