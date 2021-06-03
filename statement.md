@@ -4,7 +4,7 @@ Recursion is the term used for algorithms that solve for a value in a sequence t
 
 One of the most common tutorials for learning recursive algorithms is to calculate the factorial of some integer n, denoted n! The formula can be expressed as follows:
 
-+ N! = N * (N-1) * (N-2) * ... * 2 * 1
+> N! = N * (N-1) * (N-2) * ... * 2 * 1
 
 For example: 
 + 5! = 5 * 4 * 3 * 2 * 1 = 120 
