@@ -31,6 +31,9 @@ This prevents the function from calling itself enlessly over and over again. For
 
 # Limit the Depth of your Calculations
 
+Depending on the problem you are trying to solve, it may be a good idea to limit the depth of your recursive function. For more advanced algorithms such as Monte Carlo Tree Search (MCTS) used in chess programs, it is unreasonable to try to calculate every possible move. However, if you only want to look 3 or so steps ahead then you need to keep track of the "depth" of your algorithm.
+
+Below is a snippet of an almost identical factorial function to the one above. However, this one keeps track of how many times the factorial function has called itself. If it calls itself 4 times or more, then it will print an error message and return 0.
 
 ```python runnable
 def factorial(n, depth):
@@ -40,7 +43,7 @@ def factorial(n, depth):
         else:
             return n
     else:
-        print("\nERROR: maximum recursion depth exceeded.")
+        print("ERROR: maximum recursion depth exceeded.")
         return 0
 
 
