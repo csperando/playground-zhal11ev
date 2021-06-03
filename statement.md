@@ -43,12 +43,12 @@ The order of execution is extremely important when designing a recursion algorit
 
 # Infinite Loops
 
-In the above code, the function will call itself until the parameter n is less than or equal to one. Also, every time it is called recursively, the input parameter n is decremented by 1.
+In the above code, the function will call itself until the parameter n is less than or equal to one. Also, every time it is called recursively, the input parameter n is decremented by 1 ``` return n * factorial(n-1) ```.
 This prevents the function from calling itself endlessly over and over again. For more complex examples, make sure the value you are interested in calculating is well-defined and will not lead to an infinite recursion depth.
 
 ## Limit the Depth of your Calculations
 
-Depending on the problem you are trying to solve, it may be a good idea to limit the depth of your recursive function. For more advanced algorithms such as Monte Carlo Tree Search (MCTS) used in chess programs, it is unreasonable to try to calculate every possible move. However, if you only want to look 3 or so steps ahead then you need to keep track of the "depth" of your algorithm.
+Depending on the problem you are trying to solve, it may be a good idea to limit the depth of your recursive function. For more advanced algorithms such as a Monte Carlo Tree Search (MCTS) used in chess programs and many others, it is unreasonable to try to calculate every possible move. However, if you only want to look 3 or so steps ahead then you need to keep track of the "depth" of your algorithm.
 
 Below is a snippet of an almost identical factorial function to the one above. However, this one keeps track of how many times the factorial function has called itself. If it calls itself 7 times or more, then it will print an error message and return 0.
 
@@ -72,4 +72,6 @@ print("8! =", factorial(8, 0))
 ### Additional Resources
 
 [Recursion Wikipedia](https://en.wikipedia.org/wiki/Recursion_(computer_science))
+[Backtracking](https://en.wikipedia.org/wiki/Backtracking)
+[Tree Search Algorithms](https://en.wikipedia.org/wiki/Tree_traversal)
 
