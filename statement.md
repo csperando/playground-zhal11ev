@@ -1,9 +1,15 @@
-# Welcome!
+# What is recursion
 
-This Python template lets you get started quickly with a simple one-page playground.
+One of the most common tutorials for learning recursive algorithms is to calculate the factorial of some integer n. 
 
 ```python runnable
-print('Hello World!')
+def factorial(n):
+    if(n > 1):
+        return n*factorial(n-1)
+    else:
+        return n
+
+print(factorial(4))
 ```
 
 # Advanced usage
