@@ -12,7 +12,6 @@ For example:
 + 3! = 3 * 2 * 1 = 6 
 
 Below is a recursive function that calculates N! Given some input value n, the function will return a call to itself until the condition in the if-statement is false.
-This works because the arguement of the function being called is changed every time in such a way that eventually n <= 1. 
 
 ```python runnable
 def factorial(n):
@@ -23,6 +22,24 @@ def factorial(n):
 
 print("6! =", factorial(6))
 ```
+
+If you have not worked with this type of algorithm before, then it can be a little counter-intuitive for most top-down programming mindsets. So lets break it down a little further.
+
+In the example, we want to calculate 6! so we call factorial(6)
+Since n = 6 and 6 > 1, we return n * factorial(5). However, we do not return/exit the function at this point, because we still need to evaluate factorial(5).
+So the cycle repeats for n = 5, then n = 4 ... n = 2 and finally n = 1. 
+
+> return 6 * factorial(5)
+>> return 5 * factorial(4)
+>>> return 4 * facorial(3)
+>>>> return 3 * factorial(2)
+>>>>> return 2 * factorial(1)
+>>>>>> return 1
+>>>>> return 2 * 1
+>>>> return 3 * 2 * 1
+>>> return 4 * 3 * 2 * 1
+>> return 5 * 4 * 3 * 2 * 1
+> return 6 * 5 * 4 * 3 * 2 * 1
 
 # Infinite Loops
 
