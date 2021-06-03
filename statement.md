@@ -40,7 +40,8 @@ def factorial(n, depth):
         else:
             return n
     else:
-        return "\nERROR: maximum recursion depth exceeded."
+        print("\nERROR: maximum recursion depth exceeded.")
+        return 0
 
 
 print("6! =", factorial(6, 0))
