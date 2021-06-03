@@ -27,7 +27,7 @@ If you have not worked with this type of algorithm before, then it can be a litt
 
 In the example above, we want to calculate 6! so we call factorial(6).
 
-The function tries to evaluate. On line 2 since ```python n = 6 and 6 > 1 ```, we ```python return 6 * factorial(5) ``` on line 3. However, we do not return/exit the function at this point, because we still need to evaluate factorial(5).
+The function tries to evaluate. On **line 2** since ```n = 6 and 6 > 1 ```, we ```return 6 * factorial(5) ``` on **line 3**. However, we do not return/exit the function at this point, because we still need to evaluate factorial(5).
 So the cycle repeats for n = 5, then n = 4 ... n = 2 and finally n = 1. 
 
 > return 6 * factorial(5)
@@ -37,7 +37,7 @@ So the cycle repeats for n = 5, then n = 4 ... n = 2 and finally n = 1.
 >>>>> return 2 * factorial(1)
 >>>>>> return 1
 
-At this point we have hit the maximum recursion depth of the algorithm. factorial(1) evaluates to 1 and factorial(2) returns 2 * 1. Then factorial(3) returns 3 * 2, factorial(4) returns 4 * 6, and on until our initial function call factorial(6) returns 720.
+At this point we have hit the **maximum recursion depth** of the algorithm. factorial(1) evaluates to 1 and factorial(2) returns 2 * 1. Then factorial(3) returns 3 * 2, factorial(4) returns 4 * 6, and on until our initial function call factorial(6) returns 720.
 
 The order of execution is extremely important when designing a recursion algorithm. Often times the value you are interested in finding is at the bottom depth of your function calls, with half of your calculations remaining. Just because something is returned from a function in a recursion algorithm does not mean you will see that result like you would in a more linear top-down program.
 
