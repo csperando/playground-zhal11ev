@@ -71,7 +71,7 @@ print("8! =", factorial(8, 0))
 
 ### Additional Resources
 
-[Recursion Wikipedia](https://en.wikipedia.org/wiki/Recursion_(computer_science))
-[Backtracking](https://en.wikipedia.org/wiki/Backtracking)
-[Tree Search Algorithms](https://en.wikipedia.org/wiki/Tree_traversal)
+- [Recursion Wikipedia](https://en.wikipedia.org/wiki/Recursion_(computer_science))
+- [Backtracking](https://en.wikipedia.org/wiki/Backtracking)
+- [Tree Search Algorithms](https://en.wikipedia.org/wiki/Tree_traversal)
 
