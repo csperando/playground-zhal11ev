@@ -37,6 +37,7 @@ So the cycle repeats for n = 5, then n = 4 ... n = 2 and finally n = 1.
 >>>>>> return 1
 
 At this point we have hit the maximum recursion depth of the algorithm. factorial(1) evaluates to 1 and factorial(2) returns 2 * 1. Then factorial(3) returns 3 * 2, factorial(4) returns 4 * 6, and on until our initial function call factorial(6) returns 720.
+
 The order of execution is extremely important when designing a recursion algorithm. Often times the value you are interested in finding is at the bottom depth of your function calls, with half of your calculations remaining. Just because something is returned from a function in a recursion algorithm does not mean you will see that result like you would in a more linear top-down program.
 
 # Infinite Loops
