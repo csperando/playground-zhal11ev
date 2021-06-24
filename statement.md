@@ -49,6 +49,8 @@ What if the user enters a non-numeric value?
 
 For more complex examples, make sure the value you are interested in calculating is well-defined and will not lead to an infinite recursion depth. Sometimes, depending on how your code is being implemented, you will also have to account for errors from invalid input arguements.
 
+There is no generic recursion algorithm, no catch-all code that can be implemented for any problem. Always try to consider the constraints of the problem you are trying to solve. Sometimes a little creativity is necessary too.
+
 ## Limiting the Depth of your Calculations
 
 Depending on the problem you are trying to solve, it may be a good idea to limit the depth of your recursive function. For more advanced algorithms such as a Monte Carlo Tree Search (MCTS) used in chess programs and many others, it is unreasonable to try to calculate every possible move. However, if you only want to look 3 or so steps ahead then you need to keep track of the "depth" of your algorithm.
