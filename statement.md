@@ -44,9 +44,12 @@ The order of execution is extremely important when designing a recursion algorit
 # Infinite Loops
 
 In the above code, the function will call itself until the parameter n is less than or equal to one. Also, every time it is called recursively, the input parameter n is decremented by 1 ``` return n * factorial(n-1) ```.
-This prevents the function from calling itself endlessly over and over again. For more complex examples, make sure the value you are interested in calculating is well-defined and will not lead to an infinite recursion depth.
+This prevents the function from calling itself endlessly over and over again... Or does it? If your program allows for user input, then you have to consider the case when a user enters a negative number. Would the above algorithm be able to handle such a case?
+What if the user enters a non-numeric value?
 
-## Limit the Depth of your Calculations
+For more complex examples, make sure the value you are interested in calculating is well-defined and will not lead to an infinite recursion depth. Sometimes, depending on how your code is being implemented, you will also have to account for errors from invalid input arguements.
+
+## Limiting the Depth of your Calculations
 
 Depending on the problem you are trying to solve, it may be a good idea to limit the depth of your recursive function. For more advanced algorithms such as a Monte Carlo Tree Search (MCTS) used in chess programs and many others, it is unreasonable to try to calculate every possible move. However, if you only want to look 3 or so steps ahead then you need to keep track of the "depth" of your algorithm.
 
